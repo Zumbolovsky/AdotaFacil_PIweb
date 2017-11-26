@@ -1,0 +1,5 @@
+package br.com.siquieri.servlet;
+
+public class LogoutServlet {
+
+}

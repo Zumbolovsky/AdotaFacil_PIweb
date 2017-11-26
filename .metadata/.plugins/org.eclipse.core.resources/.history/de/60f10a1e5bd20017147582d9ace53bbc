@@ -1,0 +1,2 @@
+<div class="card-footer" style="position: absolute; right: 0; bottom: 0; left: 0; padding: 1rem; text-align: center;">Adota
+	Fácil - 2017 - Todos os Direitos Reservados</div>

@@ -1,0 +1,39 @@
+package br.com.siquieri.entity;
+
+import javax.persistence.Embeddable;
+import javax.persistence.FetchType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.Table;
+
+@Embeddable
+@Table(name="venda")
+public class Venda {
+
+	@Id
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="USUARIOID")
+	private Usuario usuarioid;
+	
+	@Id
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name="PRODUTOID")
+	private Produto produtoid;
+
+	public Usuario getUsuarioid() {
+		return usuarioid;
+	}
+
+	public void setUsuarioid(Usuario usuarioid) {
+		this.usuarioid = usuarioid;
+	}
+
+	public Produto getProdutoid() {
+		return produtoid;
+	}
+
+	public void setProdutoid(Produto produtoid) {
+		this.produtoid = produtoid;
+	}
+}

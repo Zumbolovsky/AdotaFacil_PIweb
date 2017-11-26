@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Adota Fácil</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagens/icon.ico" >
+    <link rel= "stylesheet" type = "text/css" href = "estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
+</head>
+
+<body>
+    <div id="tudo">
+
+        <div id="nome"> 
+            <div id="logo"> <a href="index.jsp"> <img src="imagens/logobaby.png" alt="Adota Fácil" title="AdotaFacil" width="60">Adota Fácil </a></div> 
+            <div id="canto"><a href="login.jsp">Login</a>|<a href="cadastrarUsuario.jsp">Cadastrar</a> </div>
+            <div id="carrinho"><img src="imagens/carrinho.png" width="40" alt="Compras"></div>	
+
+        </div>
+
+        <div id="menu">
+            <div id="item"> <a href="info.jsp"> Como funciona </a> </div>
+            <div id="item"> <a href="cadastrarUsuario.jsp"> Faça parte </a> </div>
+            <div id="item"> <a href="doacao.jsp"> Ajude-nos </a> </div>
+            <div id="item"> <a href="produtos.jsp"> Produtos </a> </div>
+            <div id="item"> <a href="contato.jsp"> Contato </a> </div>
+            
+        </div>
+
+        <div id="conteudo">
+
+            <div id="cont3">
+
+                <form name="cadastrarUsuario" action="cadastroUsuarioSucesso.jsp" method="post">
+
+                    <h3>Cadastre-se</h3>
+
+
+                    <p>
+                        <label>Nome</label>
+                        <input type="text" id="nomeid" placeholder="Nome completo" required="required" name="nome" />
+                    </p>
+                    <br/>
+                    
+                      <p>
+                        <label>Senha</label>
+                        <input type="password" id="pass1" placeholder="Senha" required="required" name="pass1" />
+                    </p>
+                    <br/>
+                    
+                    <p>
+                        <label>Senha</label>
+                        <input type="password" id="pass2" placeholder="Senha novamente" required="required" name="pass2" />
+                    </p>
+                    <br/>
+
+                    <p>
+                        <label>CPF/CNPJ</label>
+                        <input type="text" id="cpfid" placeholder="CPF/CNPJ" name="cpf" required="required" />
+                    </p>
+                    <br/>
+
+                    <p>
+                        <label>E-mail</label>
+                        <input type="email" id="emailid" placeholder="fulano@mail.com" required="required" name="email" />
+                    </p>
+                    <br/>
+
+                    <p class="submit">
+                        <input type="submit" class="botao" onclick="enviarUsuario();" value="Enviar" />
+                    </p>
+
+                </form>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            Adota Fácil - 2017 - Todos os Direitos Reservados
+        </footer>
+
+    </div>
+</body>
+
+</html>

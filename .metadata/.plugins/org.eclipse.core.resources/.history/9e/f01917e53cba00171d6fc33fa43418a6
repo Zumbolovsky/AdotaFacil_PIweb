@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Adota Fácil</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="imagens/icon.ico">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+<link href="https://fonts.googleapis.com/css?family=Muli"
+	rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Space+Mono"
+	rel="stylesheet">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+</head>
+
+
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-sm navbar-light bg-faded">
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#nav-content" aria-controls="nav-content"
+			aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<!-- Brand -->
+		<a class="navbar-brand" href="#">Logo</a>
+
+		<!-- Links -->
+		<div class="collapse navbar-collapse" id="nav-content">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">Link 1</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 2</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Link 3</a></li>
+			</ul>
+		</div>
+	</nav>
+	<div id="tudo">
+
+		<div id="cabecalho">
+			<div id="nome">
+				<div id="logo">
+					<a href="index.jsp"> <img src="imagens/logobaby.png"
+						alt="Adota Fácil" title="AdotaFacil" width="60">Adota Fácil
+					</a>
+				</div>
+				<div id="canto">
+					<a href="login.jsp">Login</a>|<a href="cadastrarUsuario.jsp">Cadastrar</a>
+				</div>
+				<div id="carrinho">
+					<img src="imagens/carrinho.png" width="40" alt="Compras">
+				</div>
+
+			</div>
+
+			<div id="menu">
+				<div id="item">
+					<a href="info.jsp"> Como funciona </a>
+				</div>
+				<div id="item">
+					<a href="cadastrarUsuario.jsp"> Faça parte </a>
+				</div>
+				<div id="item">
+					<a href="doacao.jsp"> Ajude-nos </a>
+				</div>
+				<div id="item">
+					<a href="produtos.jsp"> Produtos </a>
+				</div>
+				<div id="item">
+					<a href="contato.jsp"> Contato </a>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="cont4">
+
+			<label for="filtro">Filtre sua pesquisa:</label><br>
+			<div>
+				<select id="filtro" onchange="filtrar()">
+					<option>Nenhum</option>
+					<option id="alfaCres">Ordem Alfabética, crescente</option>
+					<option id="alfaDecres">Ordem Alfabética, decrescente</option>
+					<option id="precoCres">Preço, crescente</option>
+					<option id="precoDecres">Preço, decrescente</option>
+				</select>
+			</div>
+
+
+			<div id="produtos">
+				<div class="card" id="bone" title="20.00">
+					<img src="imagens/bone.jpg" alt="Avatar" style="width: 100%">
+					<div class="container">
+						<h3>
+							<b>Boné</b>
+						</h3>
+						<p>Boné Adota Fácil - R$20,00</p>
+
+						<p class="detalhe">
+							<a href="bone.jsp"> <input type="submit" class="botao"
+								value="Detalhe" /></a>
+						</p>
+
+						<p class="comprar">
+							<input type="submit" class="botao" value="Comprar" />
+						</p>
+
+					</div>
+				</div>
+
+				<div class="card" id="caneta" title="10.00">
+					<img src="imagens/caneta.jpg" alt="Avatar" style="width: 100%">
+					<div class="container">
+						<h3>
+							<b>Caneta</b>
+						</h3>
+						<p>Caneta Adota Fácil - R$10,00</p>
+
+						<p class="detalhe">
+							<input type="submit" class="botao" value="Detalhe" />
+						</p>
+
+						<p class="comprar">
+							<input type="submit" class="botao" onclick="enviarUsuario();"
+								value="Comprar" />
+						</p>
+					</div>
+				</div>
+
+
+				<div class="card" id="camiseta" title="49.99">
+					<img src="imagens/camiseta.jpg" alt="Avatar" style="width: 100%">
+					<div class="container">
+						<h3>
+							<b>Camiseta</b>
+						</h3>
+						<p>Camiseta Adota Fácil - R$49,99</p>
+						<p class="detalhe">
+							<input type="submit" class="botao" value="Detalhe" />
+						</p>
+						<p class="comprar">
+							<input type="submit" class="botao" onclick="comprar();"
+								value="Comprar" />
+						</p>
+					</div>
+				</div>
+
+
+				<div class="card" id="caneca" title="49.90">
+					<img src="imagens/caneca.jpg" alt="Avatar" style="width: 100%">
+					<div class="container">
+						<h3>
+							<b>Caneca</b>
+						</h3>
+						<p>Caneca Adota Fácil - R$49,90</p>
+						<p class="detalhe">
+							<input type="submit" class="botao" value="Detalhe" />
+						</p>
+						<p class="comprar">
+							<input type="submit" class="botao" onclick="comprar();"
+								value="Comprar" />
+						</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+	<script>
+		function getSelectTxt(elementId) {
+
+			var val = document.getElementById(elementId);
+
+			if (val.selectedIndex === -1)
+				return null;
+
+			return val.selectedIndex;
+		}
+		function filtrar() {
+			if (getSelectTxt("filtro") === 1) {
+				$("#produtos .card").sort(function(a, b) {
+					return a.id >= b.id;
+				}).each(function() {
+					var elem = $(this);
+					elem.remove();
+					$(elem).appendTo("#produtos");
+				});
+			} else if (getSelectTxt("filtro") === 2) {
+				$("#produtos .card").sort(function(a, b) {
+					return a.id <= b.id;
+				}).each(function() {
+					var elem = $(this);
+					elem.remove();
+					$(elem).appendTo("#produtos");
+				});
+			} else if (getSelectTxt("filtro") === 3) {
+				$("#produtos .card").sort(function(a, b) {
+					var x = Number(a.title.replace(/[^0-9\.-]+/g, ""));
+					var y = Number(b.title.replace(/[^0-9\.-]+/g, ""));
+					return x >= y;
+				}).each(function() {
+					var elem = $(this);
+					elem.remove();
+					$(elem).appendTo("#produtos");
+				});
+			} else if (getSelectTxt("filtro") === 4) {
+				$("#produtos .card").sort(function(a, b) {
+					var x = Number(a.title.replace(/[^0-9\.-]+/g, ""));
+					var y = Number(b.title.replace(/[^0-9\.-]+/g, ""));
+					return x <= y;
+				}).each(function() {
+					var elem = $(this);
+					elem.remove();
+					$(elem).appendTo("#produtos");
+				});
+			}
+		}
+	</script>
+
+</body>
+</html>
