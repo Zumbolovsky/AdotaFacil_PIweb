@@ -5310,3 +5310,149 @@ Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-L
 2017-11-26 22:39:25,425 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
 2017-11-26 22:39:25,441 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-11-26 22:39:25,441 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 23:55:39,924 [Worker-3] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2017-11-26 23:56:11,133 [Worker-17] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.siquieri:PI:1.0.0 @ C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\pom.xml.
+2017-11-26 23:57:30,280 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:57:30,294 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 23:57:30,299 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:57:30,308 [Worker-17] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 23:57:30,518 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of PI
+2017-11-26 23:57:30,519 [Worker-17] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for PI
+2017-11-26 23:57:30,701 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-11-26 23:57:30,913 [Worker-17] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:58:06,170 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:58:06,182 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 23:58:06,185 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:58:06,196 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 23:59:00,421 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:59:00,474 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 23:59:00,538 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 23:59:00,547 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:11,253 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:11,397 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:11,420 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:11,436 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:14,689 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:14,716 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:14,734 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:14,758 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:15,792 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:15,848 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:15,880 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:15,897 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:16,916 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:16,926 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:16,934 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:16,952 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:18,058 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:18,077 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:18,092 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:18,110 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:19,184 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:19,209 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:19,230 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:19,246 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:20,273 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:20,285 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:20,299 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:20,322 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:21,394 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:21,404 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:21,413 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:21,428 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:22,496 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:22,506 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:22,515 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:22,533 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:23,557 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:23,572 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:23,580 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:23,594 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:24,665 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:24,678 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:24,691 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:24,713 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:25,739 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:25,759 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:25,773 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:25,801 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:26,872 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:26,881 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:26,893 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:26,914 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:27,938 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:27,947 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:27,955 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:27,970 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:28,994 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:29,010 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:29,020 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:29,035 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:30,053 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:30,062 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:30,070 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:30,088 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:31,106 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:31,114 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:31,124 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:31,139 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:32,156 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:32,168 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:32,176 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:32,191 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:33,210 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:33,245 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:33,312 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:33,330 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:34,405 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:34,425 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:34,456 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:34,482 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:35,534 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:35,553 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:35,566 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:35,587 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:36,686 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:36,864 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:36,898 [Worker-19] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:36,916 [Worker-19] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:37,989 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:38,001 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:38,010 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:38,026 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:39,045 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:39,076 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:39,084 [Worker-21] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:39,099 [Worker-21] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:08:40,165 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:40,174 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:08:40,182 [Worker-1] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:08:40,197 [Worker-1] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:15:55,723 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:15:55,736 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:15:55,804 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:15:55,825 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:17:15,482 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:17:15,493 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:17:15,501 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:17:15,517 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:18:33,405 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:18:33,416 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:18:33,428 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:18:33,445 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:21:40,151 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:21:40,165 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:21:40,178 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:21:40,201 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:24:17,627 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:24:17,640 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:24:17,653 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:24:17,676 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:24:54,673 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:24:54,698 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:24:54,713 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:24:54,741 [Worker-31] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-27 00:32:02,949 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:32:02,986 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-27 00:32:03,016 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-27 00:32:03,033 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\VSIQUIERI\workspacePI\AdotaFacil_PIweb\PI\src\test\resources

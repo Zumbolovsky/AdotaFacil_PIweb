@@ -12,6 +12,7 @@
 	vertical-align: middle;
 	height: 100%;
 }
+
 </style>
 
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -22,24 +23,24 @@
 	</button>
 
 	<!-- Brand -->
-	<a class="navbar-brand" href="index.jsp"> <img
-		src="imagens/logobaby.png" title="AdotaFacil" width="60">Adota
+	<a class="navbar-brand" href="/PI/index.jsp"> <img
+		src="/PI/imagens/logobaby.png" title="AdotaFacil" width="60">Adota
 		Fácil
 	</a>
 
 	<!-- Links -->
 	<div class="collapse navbar-collapse" id="nav-content">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item"><a class="nav-link" href="info.jsp">Como
+			<li class="nav-item"><a class="nav-link" href="/PI/info.jsp">Como
 					funciona</a></li>
-			<li class="nav-item"><a class="nav-link" href="cadastro.jsp">Faça parte</a></li>
-			<li class="nav-item"><a class="nav-link" href="doacao.jsp">Ajude-nos</a></li>
-			<li class="nav-item"><a class="nav-link" href="produtos.jsp">Produtos</a></li>
-			<li class="nav-item"><a class="nav-link" href="contato.jsp">Contato</a></li>
+			<li class="nav-item"><a class="nav-link" href="/PI/cadastro.jsp">Faça parte</a></li>
+			<li class="nav-item"><a class="nav-link" href="/PI/doacao.jsp">Ajude-nos</a></li>
+			<li class="nav-item"><a class="nav-link" href="/PI/produtos.jsp">Produtos</a></li>
+			<li class="nav-item"><a class="nav-link" href="/PI/contato.jsp">Contato</a></li>
 		</ul>
 		<ul class="navbar-nav">
-			<li class="nav-item"><a class="nav-link" href="login.jsp">Login</a></li>
-			<li class="nav-item"><a class="nav-link" href="cadastro.jsp">Cadastrar</a></li>
+			<li class="nav-item"><a class="nav-link" href="/PI/login.jsp">Login</a></li>
+			<li class="nav-item"><a class="nav-link" href="/PI/cadastro.jsp">Cadastrar</a></li>
 		</ul>
 	</div>
 </nav>

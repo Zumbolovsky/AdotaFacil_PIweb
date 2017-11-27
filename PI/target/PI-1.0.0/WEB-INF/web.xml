@@ -19,16 +19,16 @@
     <url-pattern>/faces/*</url-pattern>
   </servlet-mapping>
   <filter>
-    <filter-name>LoginFilter</filter-name> <!-- mandatory -->
-    <filter-class>br.com.siquieri.filters.LoginFilter</filter-class> <!-- mandatory -->
-    <init-param> <!-- optional -->
-    <param-name>test</param-name>
-    <param-value>testValue</param-value>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>br.com.siquieri.filters.LoginFilter</filter-class>
+    <init-param>
+      <param-name>test</param-name>
+      <param-value>testValue</param-value>
     </init-param>
   </filter>
   <filter-mapping>
-    <filter-name>LoginFilter</filter-name> <!-- mandatory -->
-    <url-pattern>/usuario/*</url-pattern> <!-- either url-pattern or servlet-name is mandatory -->
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/usuario/*</url-pattern>
     <servlet-name>LoginServlet</servlet-name>
     <dispatcher>REQUEST</dispatcher>
   </filter-mapping>
