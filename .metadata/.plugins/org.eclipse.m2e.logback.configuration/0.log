@@ -5284,3 +5284,29 @@ Caused by: org.apache.http.ConnectionClosedException: Premature end of Content-L
 2017-11-26 21:13:43,229 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
 2017-11-26 21:13:43,236 [Worker-103] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2017-11-26 21:13:43,250 [Worker-103] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 21:21:38,028 [Worker-4] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2017-11-26 21:22:51,992 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 21:22:51,999 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 21:22:52,001 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 21:22:52,007 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 21:22:52,654 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 21:22:52,660 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 21:22:52,662 [Worker-7] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 21:22:52,668 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 22:39:06,462 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:06,478 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 22:39:06,478 [Worker-23] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:06,478 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 22:39:09,035 [Worker-25] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: br.com.siquieri:PI:1.0.0 @ C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\pom.xml.
+2017-11-26 22:39:18,038 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:18,038 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 22:39:18,054 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:18,054 [Worker-25] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources
+2017-11-26 22:39:18,054 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of PI
+2017-11-26 22:39:18,054 [Worker-25] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for PI
+2017-11-26 22:39:18,070 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.maven.plugins:maven-clean-plugin:jar:2.5 is missing, no dependency information available
+2017-11-26 22:39:18,070 [Worker-25] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:25,363 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:25,425 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\main\resources
+2017-11-26 22:39:25,441 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-11-26 22:39:25,441 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Zumbolovsky\workspacePI\AdotaFacil_PIweb\PI\src\test\resources

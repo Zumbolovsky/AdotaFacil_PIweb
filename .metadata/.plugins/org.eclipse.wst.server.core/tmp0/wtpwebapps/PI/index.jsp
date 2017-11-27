@@ -35,7 +35,7 @@
 
 <body>
 	<section class="cabecalho">
-		<c:import url="/cabecalho.jsp" />
+		<c:import url="http://localhost:8080/PI/cabecalho.jsp" />
 	</section>
 
 	<h3 style="padding-top: 10px; text-align: center; margin: 20px; font-weight: bold;">${mensagem}</h3>
