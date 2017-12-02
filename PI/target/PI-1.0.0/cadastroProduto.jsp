@@ -24,7 +24,7 @@
         </section>
 
         <div id="conteudo" style="margin: 50px;">
-            <form name="cadastrarProdutos" action="produtos" method="post">
+            <form name="cadastrarProdutos" action="produtos" method="post" enctype="multipart/form-data">
                 <div class="form-group row">
                     <h3>Cadastre seus Produtos</h3>
                 </div>
@@ -61,7 +61,7 @@
                 </div>
                 <div class="form-group">
                     <label for="inputFile" class="col-sm-2 col-form-label">Imagem do produto:</label>
-                    <input type="file" class="form-control-file" id="inputFile">
+                    <input type="file" class="form-control-file col-sm-2" name="inputFile" id="inputFile">
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-2"></div>
