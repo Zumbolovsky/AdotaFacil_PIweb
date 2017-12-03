@@ -2,57 +2,60 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
 
-<title>Adota Fácil</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="imagens/icon.ico">
-<link rel="stylesheet" type="text/css" href="estilos.css">
-<link href="https://fonts.googleapis.com/css?family=Muli"
-	rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Space+Mono"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <title>Adota Fácil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagens/icon.ico">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono"
+              rel="stylesheet">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
-</head>
+    </head>
 
-<body>
-	<section class="cabecalho">
-		<c:import url="cabecalhoU.jsp" />
-	</section>
+    <body>
+        <section class="cabecalho">
+            <c:import url="cabecalhoU.jsp" />
+        </section>
 
 
-	<div id="conteudo" style="margin: 50px;">
+        <div id="conteudo" style="margin: 50px;">
 
-		<div class="row" style="min-height: 160px">
-			<div class="col-sm-5" style="margin-top: 30px">
-				<img id="imagem" src="/PI/imagens/copo.jpg" alt="Copo" style="width: inherit; height: inherit;">
-			</div>
+            <div class="row" style="min-height: 160px">
+                <div class="col-sm-5" style="margin-top: 30px">
+                    <img id="imagem" src="/PI/imagens/copo.jpg" alt="Copo" style="width: inherit; height: inherit;">
+                </div>
 
-			<div class="col-sm-6" id="descricao">
-				<h3 class="col-sm-12">Copo</h3>
-				<p class="col-sm-12">Copo Adota Fácil</p>
-				<hr style="min-height: 2px;"/>
-				
-				<label class="col-sm-12">Preço:</label>
-				<h4 class="col-sm-12" style="min-height: 20px;">R$ 15,00</h4>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-sm-5"></div>
-			<button class="btn btn-primary col-sm-6" style="margin: 10px; margin-left: 20px; width: 100%; position: relative; bottom: 0;">Adicionar ao carrinho</button>
-		</div>
-		
-	</div>
+                <div class="col-sm-6" id="descricao">
+                    <h3 class="col-sm-12">Copo</h3>
+                    <p class="col-sm-12">Copo Adota Fácil</p>
+                    <hr style="min-height: 2px;"/>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+                    <label class="col-sm-12">Preço:</label>
+                    <h4 class="col-sm-12" style="min-height: 20px;">R$ 15,00</h4>
+                </div>
+            </div>
+            <form action="carrinho" method="post">
+                <input name="produto" value="Copo" id="Copo" type="hidden">
+                <div class="row">
+                    <div class="col-sm-5"></div>
+                    <button type="submit" class="btn btn-primary col-sm-6" style="margin: 10px; margin-left: 20px; width: 100%; position: relative; bottom: 0;">Adicionar ao carrinho</button>
+                </div>
+            </form>
 
-</body>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+
+    </body>
 
 </html>

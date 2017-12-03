@@ -41,13 +41,10 @@
                 </div>
             </div>
             <form action="carrinho" method="post">
-                <input name="produto" value="camiseta" id="camiseta" type="hidden">
+                <input name="produto" value="Camiseta" id="Camiseta" type="hidden">
                 <div class="row">
                     <div class="col-sm-5"></div>
-
-
                     <button type="submit" class="btn btn-primary col-sm-6" style="margin: 10px; margin-left: 20px; width: 100%; position: relative; bottom: 0;">Adicionar ao carrinho</button>
-
                 </div>
             </form>
         </div>

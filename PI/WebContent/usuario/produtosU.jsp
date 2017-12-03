@@ -2,160 +2,167 @@
 
 <!DOCTYPE html>
 <html>
-<head>
+    <head>
 
-<title>Adota Fácil</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="imagens/icon.ico">
-<link rel="stylesheet" type="text/css" href="/PI/estilos.css">
-<link href="https://fonts.googleapis.com/css?family=Muli"
-	rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Space+Mono"
-	rel="stylesheet">
-<link rel="stylesheet"
-	href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+        <title>Adota Fácil</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="imagens/icon.ico">
+        <link rel="stylesheet" type="text/css" href="/PI/estilos.css">
+        <link href="https://fonts.googleapis.com/css?family=Muli"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Space+Mono"
+              rel="stylesheet">
+        <link rel="stylesheet"
+              href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
-<style type="text/css">
+        <style type="text/css">
 
-</style>
+        </style>
 
-</head>
+    </head>
 
-<body>
-	<section class="cabecalho">
-		<c:import url="cabecalhoU.jsp" />
-	</section>
+    <body>
+        <section class="cabecalho">
+            <c:import url="cabecalhoU.jsp" />
+        </section>
 
-	<div id="conteudo" style="margin: 50px;">
-		<div class="form-group row">
-			<label for="filtro" class="col-form-label col-sm-4">Filtre
-				sua pesquisa:</label> <select id="filtro" class="form-control col-sm-8"
-				onchange="filtrar()">
-				<option>Nenhum</option>
-				<option id="alfaCres">Ordem Alfabética, crescente</option>
-				<option id="alfaDecres">Ordem Alfabética, decrescente</option>
-				<option id="precoCres">Preço, crescente</option>
-				<option id="precoDecres">Preço, decrescente</option>
-			</select>
-		</div>
+        <div id="conteudo" style="margin: 50px;">
 
-		<div id="produtos">
-			<div class="row">
-				<div class="card col-sm-4" style="width: 20rem;" id="bone"
-					title="20.00">
-					<img class="card-img-top" src="/PI/imagens/bone2.jpg"
-						alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Boné</h4>
-						<p class="card-text">Boné Adota Fácil - R$20,00.</p>
-						<a href="boneU.jsp" class="btn btn-primary">Detalhe</a> 
-                                	</div>
-				</div>
-				<div class="card col-sm-4" style="width: 20rem;" id="caneta"
-					title="10.00">
-					<img class="card-img-top" src="/PI/imagens/caneta.jpg"
-						alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Caneta</h4>
-						<p class="card-text">Caneta Adota Fácil - R$10,00.</p>
-						<a href="canetaU.jsp" class="btn btn-primary">Detalhe</a>
-					</div>
-				</div>
-				<div class="card col-md-4" style="width: 20rem;" id="camiseta"
-					title="49.99">
-					<img class="card-img-top" src="/PI/imagens/camiseta.jpg"
-						alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Camiseta</h4>
-						<p class="card-text">Camiseta Adota Fácil - R$49,99.</p>
-						<a href="camisetaU.jsp" class="btn btn-primary">Detalhe</a>
-					</div>
-				</div>
-				<div class="card col-md-4" style="width: 20rem;" id="caneca"
-					title="49.90">
-					<img class="card-img-top" src="/PI/imagens/caneca.jpg"
-						alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Caneca</h4>
-						<p class="card-text">Caneca Adota Fácil - R$49,90.</p>
-						<a href="canecaU.jsp" class="btn btn-primary">Detalhe</a>
-					</div>
-				</div>
-				<div class="card col-md-4" style="width: 20rem;" id="copo"
-					title="15.00">
-					<img class="card-img-top" src="/PI/imagens/copo.jpg"
-						alt="Card image cap">
-					<div class="card-body">
-						<h4 class="card-title">Copo</h4>
-						<p class="card-text">Copo Adota Fácil - R$15,00.</p>
-						<a href="copoU.jsp" class="btn btn-primary">Detalhe</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <h3 style="padding-top: 10px; text-align: center; margin: 20px; font-weight: bold;">${mensagem}</h3>
 
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-	<script
-		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+            <h1 class="display-3">Produtos</h1>
 
-	<script>
-		function getSelectTxt(elementId) {
+            <hr/>
 
-			var val = document.getElementById(elementId);
+            <div class="form-group row">
+                <label for="filtro" class="col-form-label col-sm-4">Filtre
+                    sua pesquisa:</label> <select id="filtro" class="form-control col-sm-8"
+                                              onchange="filtrar()">
+                    <option>Nenhum</option>
+                    <option id="alfaCres">Ordem Alfabética, crescente</option>
+                    <option id="alfaDecres">Ordem Alfabética, decrescente</option>
+                    <option id="precoCres">Preço, crescente</option>
+                    <option id="precoDecres">Preço, decrescente</option>
+                </select>
+            </div>
 
-			if (val.selectedIndex === -1)
-				return null;
+            <div id="produtos">
+                <div class="row">
+                    <div class="card col-sm-4" style="width: 20rem;" id="bone"
+                         title="20.00">
+                        <img class="card-img-top" src="/PI/imagens/bone2.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Boné</h4>
+                            <p class="card-text">Boné Adota Fácil - R$20,00.</p>
+                            <a href="boneU.jsp" class="btn btn-primary">Detalhe</a> 
+                        </div>
+                    </div>
+                    <div class="card col-sm-4" style="width: 20rem;" id="caneta"
+                         title="10.00">
+                        <img class="card-img-top" src="/PI/imagens/caneta.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Caneta</h4>
+                            <p class="card-text">Caneta Adota Fácil - R$10,00.</p>
+                            <a href="canetaU.jsp" class="btn btn-primary">Detalhe</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 20rem;" id="camiseta"
+                         title="49.99">
+                        <img class="card-img-top" src="/PI/imagens/camiseta.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Camiseta</h4>
+                            <p class="card-text">Camiseta Adota Fácil - R$49,99.</p>
+                            <a href="camisetaU.jsp" class="btn btn-primary">Detalhe</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 20rem;" id="caneca"
+                         title="49.90">
+                        <img class="card-img-top" src="/PI/imagens/caneca.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Caneca</h4>
+                            <p class="card-text">Caneca Adota Fácil - R$49,90.</p>
+                            <a href="canecaU.jsp" class="btn btn-primary">Detalhe</a>
+                        </div>
+                    </div>
+                    <div class="card col-md-4" style="width: 20rem;" id="copo"
+                         title="15.00">
+                        <img class="card-img-top" src="/PI/imagens/copo.jpg"
+                             alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Copo</h4>
+                            <p class="card-text">Copo Adota Fácil - R$15,00.</p>
+                            <a href="copoU.jsp" class="btn btn-primary">Detalhe</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			return val.selectedIndex;
-		}
-		function filtrar() {
-			if (getSelectTxt("filtro") === 1) {
-				$(".row .card").sort(function(a, b) {
-					return a.id >= b.id;
-				}).each(function() {
-					var elem = $(this);
-					elem.remove();
-					$(elem).appendTo(".row");
-					elem.remove();
-				});
-			} else if (getSelectTxt("filtro") === 2) {
-				$(".row .card").sort(function(a, b) {
-					return a.id <= b.id;
-				}).each(function() {
-					var elem = $(this);
-					elem.remove();
-					$(elem).appendTo(".row");
-					elem.remove();
-				});
-			} else if (getSelectTxt("filtro") === 3) {
-				$(".row .card").sort(function(a, b) {
-					var x = Number(a.title.replace(/[^0-9\.-]+/g, ""));
-					var y = Number(b.title.replace(/[^0-9\.-]+/g, ""));
-					return x >= y;
-				}).each(function() {
-					var elem = $(this);
-					elem.remove();
-					$(elem).appendTo(".row");
-					elem.remove();
-				});
-			} else if (getSelectTxt("filtro") === 4) {
-				$(".row .card").sort(function(a, b) {
-					var x = Number(a.title.replace(/[^0-9\.-]+/g, ""));
-					var y = Number(b.title.replace(/[^0-9\.-]+/g, ""));
-					return x <= y;
-				}).each(function() {
-					var elem = $(this);
-					elem.remove();
-					$(elem).appendTo(".row");
-					elem.remove();
-				});
-			}
-		}
-	</script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 
-</body>
+        <script>
+                                    function getSelectTxt(elementId) {
+
+                                        var val = document.getElementById(elementId);
+
+                                        if (val.selectedIndex === -1)
+                                            return null;
+
+                                        return val.selectedIndex;
+                                    }
+                                    function filtrar() {
+                                        if (getSelectTxt("filtro") === 1) {
+                                            $(".row .card").sort(function (a, b) {
+                                                return a.id >= b.id;
+                                            }).each(function () {
+                                                var elem = $(this);
+                                                elem.remove();
+                                                $(elem).appendTo(".row");
+                                                elem.remove();
+                                            });
+                                        } else if (getSelectTxt("filtro") === 2) {
+                                            $(".row .card").sort(function (a, b) {
+                                                return a.id <= b.id;
+                                            }).each(function () {
+                                                var elem = $(this);
+                                                elem.remove();
+                                                $(elem).appendTo(".row");
+                                                elem.remove();
+                                            });
+                                        } else if (getSelectTxt("filtro") === 3) {
+                                            $(".row .card").sort(function (a, b) {
+                                                var x = Number(a.title.replace(/[^0-9\.-]+/g, ""));
+                                                var y = Number(b.title.replace(/[^0-9\.-]+/g, ""));
+                                                return x >= y;
+                                            }).each(function () {
+                                                var elem = $(this);
+                                                elem.remove();
+                                                $(elem).appendTo(".row");
+                                                elem.remove();
+                                            });
+                                        } else if (getSelectTxt("filtro") === 4) {
+                                            $(".row .card").sort(function (a, b) {
+                                                var x = Number(a.title.replace(/[^0-9\.-]+/g, ""));
+                                                var y = Number(b.title.replace(/[^0-9\.-]+/g, ""));
+                                                return x <= y;
+                                            }).each(function () {
+                                                var elem = $(this);
+                                                elem.remove();
+                                                $(elem).appendTo(".row");
+                                                elem.remove();
+                                            });
+                                        }
+                                    }
+        </script>
+
+    </body>
 </html>

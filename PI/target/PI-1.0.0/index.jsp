@@ -38,9 +38,10 @@
 		<c:import url="http://localhost:8080/PI/cabecalho.jsp" />
 	</section>
 
-	<h3 style="padding-top: 10px; text-align: center; margin: 20px; font-weight: bold;">${mensagem}</h3>
-
 	<div id="conteudo" style="margin: 50px;">
+            
+            <h3 style="padding-top: 10px; text-align: center; margin: 20px; font-weight: bold;">${mensagem}</h3>
+            
 		<div class="row">
 			<div id="carouselExampleControls" class="carousel slide col-sm-12"
 				data-ride="carousel">

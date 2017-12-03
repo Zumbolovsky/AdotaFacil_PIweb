@@ -22,9 +22,13 @@
 	<section class="cabecalho">
 		<c:import url="cabecalhoU.jsp" />
 	</section>
-
+        
 	<div id="conteudo" style="margin: 50px;">
 
+            <h1 class="display-3">Carrinho</h1>
+            
+            <h3 style="padding-top: 10px; text-align: center; margin: 20px; font-weight: bold; margin-top: 5%">${mensagem}</h3>
+            
             <div class="list-group">
                 <c:forEach var="produto" items="${produtos}">
                     <div class="ld-flex w-100 justify-content-between">
@@ -33,7 +37,8 @@
                     <p class="mb-1">
                         ${produto.descricao}
                     </p>
-                    <small class="text-muted">Preço Unitário: R$${produto.preco}</small>    
+                    <small class="text-muted">Preço Unitário: R$${produto.preco}</small>
+                    <hr/>
                 </c:forEach>
             </div>
 

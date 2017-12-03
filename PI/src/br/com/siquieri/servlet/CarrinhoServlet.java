@@ -22,6 +22,11 @@ public class CarrinhoServlet extends HttpServlet {
         try {
             Carrinho carrinho = (Carrinho) session.getAttribute("carrinho");
             
+            if (carrinho.getProdutos().isEmpty()) {
+                request.setAttribute("mensagem", "Seu carrinho está vazio!");
+                request.getRequestDispatcher("carrinho.jsp").forward(request, response);
+            }
+            
             request.setAttribute("produtos", carrinho.getProdutos());
             request.getRequestDispatcher("carrinho.jsp").forward(request, response);
         } catch (Exception e) {
