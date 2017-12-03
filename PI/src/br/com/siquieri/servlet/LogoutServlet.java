@@ -24,12 +24,14 @@ public class LogoutServlet extends HttpServlet {
 		super();
 	}
 
+        @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		response.setContentType("text/html");
 		try {
 			HttpSession session = request.getSession(false);
 			session.setAttribute("user", null);
+                        session.setAttribute("carrinho", null);
 
 			request.setAttribute("mensagem", "Logout realizado com sucesso!");
 			request.getRequestDispatcher("/index.jsp").forward(request, response);

@@ -49,9 +49,8 @@
 					<div class="card-body">
 						<h4 class="card-title">Boné</h4>
 						<p class="card-text">Boné Adota Fácil - R$20,00.</p>
-						<a href="boneU.jsp" class="btn btn-primary">Detalhe</a> <a
-							href="#" class="btn btn-primary">Comprar</a>
-					</div>
+						<a href="boneU.jsp" class="btn btn-primary">Detalhe</a> 
+                                	</div>
 				</div>
 				<div class="card col-sm-4" style="width: 20rem;" id="caneta"
 					title="10.00">
@@ -60,8 +59,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Caneta</h4>
 						<p class="card-text">Caneta Adota Fácil - R$10,00.</p>
-						<a href="canetaU.jsp" class="btn btn-primary">Detalhe</a> <a href="#"
-							class="btn btn-primary">Comprar</a>
+						<a href="canetaU.jsp" class="btn btn-primary">Detalhe</a>
 					</div>
 				</div>
 				<div class="card col-md-4" style="width: 20rem;" id="camiseta"
@@ -71,8 +69,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Camiseta</h4>
 						<p class="card-text">Camiseta Adota Fácil - R$49,99.</p>
-						<a href="camisetaU.jsp" class="btn btn-primary">Detalhe</a> <a href="#"
-							class="btn btn-primary">Comprar</a>
+						<a href="camisetaU.jsp" class="btn btn-primary">Detalhe</a>
 					</div>
 				</div>
 				<div class="card col-md-4" style="width: 20rem;" id="caneca"
@@ -82,8 +79,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Caneca</h4>
 						<p class="card-text">Caneca Adota Fácil - R$49,90.</p>
-						<a href="canecaU.jsp" class="btn btn-primary">Detalhe</a> <a href="#"
-							class="btn btn-primary">Comprar</a>
+						<a href="canecaU.jsp" class="btn btn-primary">Detalhe</a>
 					</div>
 				</div>
 				<div class="card col-md-4" style="width: 20rem;" id="copo"
@@ -93,8 +89,7 @@
 					<div class="card-body">
 						<h4 class="card-title">Copo</h4>
 						<p class="card-text">Copo Adota Fácil - R$15,00.</p>
-						<a href="copoU.jsp" class="btn btn-primary">Detalhe</a> <a href="#"
-							class="btn btn-primary">Comprar</a>
+						<a href="copoU.jsp" class="btn btn-primary">Detalhe</a>
 					</div>
 				</div>
 			</div>

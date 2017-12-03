@@ -18,6 +18,7 @@ import javax.servlet.http.HttpSession;
 
 import br.com.siquieri.dao.GenericDao;
 import br.com.siquieri.entity.Usuario;
+import br.com.siquieri.utils.Carrinho;
 
 @WebServlet("/logins")
 public class LoginServlet extends HttpServlet {
@@ -27,19 +28,22 @@ public class LoginServlet extends HttpServlet {
         super();
     }
 
+        @Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html");
 		try {
 			String email = request.getParameter("email");
 			String senha1 = request.getParameter("pass1");
 
-			GenericDao<Usuario> dao = new GenericDao<Usuario>(Usuario.class);
+			GenericDao<Usuario> dao = new GenericDao<>(Usuario.class);
 			
 			Usuario usuario = dao.buscarUsuario(email, senha1);
 			
 			if(usuario != null) {
 				HttpSession session = request.getSession(true);
 				session.setAttribute("user", usuario.getEmail());
+                                Carrinho carrinho = new Carrinho();
+                                session.setAttribute("carrinho", carrinho);
 				
 				request.setAttribute("mensagem", "Login realizado com sucesso!");
 				request.getRequestDispatcher("usuario/indexU.jsp").forward(request, response);

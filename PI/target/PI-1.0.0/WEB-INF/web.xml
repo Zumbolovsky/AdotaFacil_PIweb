@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app id="WebApp_ID" version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <display-name>PI</display-name>
+    <servlet>
+        <servlet-name>CarrinhoServlet</servlet-name>
+        <servlet-class>br.com.siquieri.servlet.CarrinhoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ImagemServlet</servlet-name>
         <url-pattern>/ImagemServlet</url-pattern>
@@ -8,6 +12,10 @@
     <servlet-mapping>
         <servlet-name>ProdutoServlet</servlet-name>
         <url-pattern>/ProdutoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CarrinhoServlet</servlet-name>
+        <url-pattern>/CarrinhoServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

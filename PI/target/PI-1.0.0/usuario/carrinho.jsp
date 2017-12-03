@@ -25,7 +25,17 @@
 
 	<div id="conteudo" style="margin: 50px;">
 
-	
+            <div class="list-group">
+                <c:forEach var="produto" items="${produtos}">
+                    <div class="ld-flex w-100 justify-content-between">
+                        <h5 class="mb-1">${produto.nome}</h5> 
+                    </div>
+                    <p class="mb-1">
+                        ${produto.descricao}
+                    </p>
+                    <small class="text-muted">Preço Unitário: R$${produto.preco}</small>    
+                </c:forEach>
+            </div>
 
 	</div>
 
