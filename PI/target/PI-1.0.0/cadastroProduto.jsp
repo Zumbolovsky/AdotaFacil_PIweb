@@ -59,9 +59,11 @@
                                placeholder="Quantidade" name="quantidade">
                     </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group row">
                     <label for="inputFile" class="col-sm-2 col-form-label">Imagem do produto:</label>
-                    <input type="file" class="form-control-file col-sm-2" name="inputFile" id="inputFile">
+                    <div  class="col-sm-10">
+                        <input type="file" class="form-control-file" name="inputFile" id="inputFile" required="required">
+                    </div>
                 </div>
                 <div class="form-group row">
                     <div class="col-sm-2"></div>

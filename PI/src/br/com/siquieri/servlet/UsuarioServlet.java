@@ -42,7 +42,7 @@ public class UsuarioServlet extends HttpServlet {
 			if (dao.buscarUsuario(email) != null) {
 
 				request.setAttribute("mensagem", "Endereço de email em uso!");
-				request.getRequestDispatcher("cadastroSucesso.jsp").forward(request, response);
+				request.getRequestDispatcher("cadastro.jsp").forward(request, response);
 
 			} else {
 
@@ -54,13 +54,13 @@ public class UsuarioServlet extends HttpServlet {
 				dao.adicionar(usuario);
 
 				request.setAttribute("mensagem", "Usuário adicionado com sucesso!");
-				request.getRequestDispatcher("cadastroSucesso.jsp").forward(request, response);
+				request.getRequestDispatcher("cadastro.jsp").forward(request, response);
 
 			}
 
 		} catch (Exception e) {
 			request.setAttribute("mensagem", "ERRO: " + e.getMessage());
-			request.getRequestDispatcher("cadastroSucesso.jsp").forward(request, response);
+			request.getRequestDispatcher("cadastro.jsp").forward(request, response);
 		}
 	}
 

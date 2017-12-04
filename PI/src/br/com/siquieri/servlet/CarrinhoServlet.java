@@ -21,12 +21,15 @@ public class CarrinhoServlet extends HttpServlet {
         HttpSession session = request.getSession();
         try {
             Carrinho carrinho = (Carrinho) session.getAttribute("carrinho");
-            
+
             if (carrinho.getProdutos().isEmpty()) {
                 request.setAttribute("mensagem", "Seu carrinho está vazio!");
                 request.getRequestDispatcher("carrinho.jsp").forward(request, response);
             }
+
+            double total = carrinho.calcularTotal(carrinho);
             
+            request.setAttribute("preco", "Valor Total: R$" + total);
             request.setAttribute("produtos", carrinho.getProdutos());
             request.getRequestDispatcher("carrinho.jsp").forward(request, response);
         } catch (Exception e) {
@@ -44,9 +47,28 @@ public class CarrinhoServlet extends HttpServlet {
             GenericDao<Produto> daoP = new GenericDao<>(Produto.class);
             Produto produto = daoP.buscarProduto(request.getParameter("produto"));
             Carrinho carrinho = (Carrinho) session.getAttribute("carrinho");
-            
-            carrinho.getProdutos().add(produto);
-            
+
+            int i = 0;
+            boolean temProdutoNoCarrinho = false;
+            for (Produto prod : carrinho.getProdutos()) {
+                if (prod.getNome().equalsIgnoreCase(produto.getNome())) {
+                    temProdutoNoCarrinho = true;
+                    break;
+                }
+                i++;
+            }
+
+            if (temProdutoNoCarrinho) {
+                Produto p = carrinho.getProdutos().get(i);
+                p.setQuantidade(p.getQuantidade() + 1);
+            } else {
+                produto.setQuantidade(1);
+                carrinho.getProdutos().add(produto);
+            }
+
+            double total = carrinho.calcularTotal(carrinho);
+
+            request.setAttribute("preco", "Valor Total: R$" + total);
             request.setAttribute("produtos", carrinho.getProdutos());
             request.setAttribute("mensagem", "Produto adicionado ao carrinho!");
             request.getRequestDispatcher("carrinho.jsp").forward(request, response);

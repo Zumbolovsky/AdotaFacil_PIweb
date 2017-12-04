@@ -40,6 +40,11 @@ public class LoginServlet extends HttpServlet {
 			Usuario usuario = dao.buscarUsuario(email, senha1);
 			
 			if(usuario != null) {
+                            
+//                            if((usuario.getEmail() == "gerente@adotafacil.com")) {
+//                                request.setAttribute("mensagem", "Bem-vindo gerente");
+//                            }
+                            
 				HttpSession session = request.getSession(true);
 				session.setAttribute("user", usuario.getEmail());
                                 Carrinho carrinho = new Carrinho();

@@ -17,5 +17,13 @@ public class Carrinho {
     public void setProdutos(ArrayList<Produto> produtos) {
         Carrinho.produtos = produtos;
     }   
+    
+    public double calcularTotal(Carrinho carrinho) {
+        double total = 0.0;
+        for (Produto prod : carrinho.getProdutos()) {
+            total = total + (prod.getPreco() * prod.getQuantidade());
+        }
+        return total;
+    }
             
 }
