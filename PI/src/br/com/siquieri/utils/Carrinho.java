@@ -1,20 +1,21 @@
 package br.com.siquieri.utils;
 
 import br.com.siquieri.entity.Produto;
-import java.util.ArrayList;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 public class Carrinho {
-    private static ArrayList<Produto> produtos;
+    private static Set<Produto> produtos;
     
     public Carrinho() {
-        this.setProdutos(new ArrayList<>());
+        this.setProdutos(new LinkedHashSet<>());
     }
 
-    public ArrayList<Produto> getProdutos() {
+    public Set<Produto> getProdutos() {
         return produtos;
     }
 
-    public void setProdutos(ArrayList<Produto> produtos) {
+    public void setProdutos(LinkedHashSet<Produto> produtos) {
         Carrinho.produtos = produtos;
     }   
     

@@ -59,7 +59,7 @@ public class CarrinhoServlet extends HttpServlet {
             }
 
             if (temProdutoNoCarrinho) {
-                Produto p = carrinho.getProdutos().get(i);
+                Produto p = (Produto) carrinho.getProdutos().toArray()[i];
                 p.setQuantidade(p.getQuantidade() + 1);
             } else {
                 produto.setQuantidade(1);

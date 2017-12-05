@@ -8,6 +8,8 @@ Selma Masuzawa - RA: 20680327
 package br.com.siquieri.entity;
 
 import java.io.Serializable;
+import java.util.LinkedHashSet;
+import java.util.Set;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,6 +18,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -35,9 +38,8 @@ public class Venda implements Serializable{
 	@JoinColumn(name="IDUSUARIO")
 	private Usuario usuario;
 	
-	@ManyToOne(fetch=FetchType.LAZY)
-	@JoinColumn(name="IDPRODUTO")
-	private Produto produto;
+	@ManyToMany(mappedBy="vendas")
+	private Set<Produto> produtos = new LinkedHashSet<>();
 
 	public int getVendaid() {
 		return vendaid;
@@ -55,12 +57,12 @@ public class Venda implements Serializable{
 		this.usuario = usuario;
 	}
 
-	public Produto getProduto() {
-		return produto;
-	}
+    public Set<Produto> getProdutos() {
+        return produtos;
+    }
 
-	public void setProduto(Produto produto) {
-		this.produto = produto;
-	}
+    public void setProdutos(LinkedHashSet<Produto> produtos) {
+        this.produtos = produtos;
+    }
 
 }

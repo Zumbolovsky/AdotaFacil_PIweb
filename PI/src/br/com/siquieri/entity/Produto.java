@@ -14,12 +14,13 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.Lob;
-import javax.persistence.OneToMany;
+import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 //POJO do Produto
@@ -50,7 +51,12 @@ public class Produto implements Serializable{
 	@Column(name="IMAGEM")
 	private byte[] imagem;
 	
-	@OneToMany(cascade=CascadeType.ALL, fetch=FetchType.LAZY, mappedBy="produto")
+	@ManyToMany(cascade=CascadeType.ALL)
+        @JoinTable(
+                name="venda_produto",
+                joinColumns={@JoinColumn(name="IDPRODUTO")},
+                inverseJoinColumns={@JoinColumn(name="IDVENDA")}
+        )
 	private Set<Venda> vendas = new LinkedHashSet<>();
 
 	public int getProdutoid() {
@@ -105,7 +111,7 @@ public class Produto implements Serializable{
 		return vendas;
 	}
 
-	public void setVendas(Set<Venda> vendas) {
+	public void setVendas(LinkedHashSet<Venda> vendas) {
 		this.vendas = vendas;
 	}
 
