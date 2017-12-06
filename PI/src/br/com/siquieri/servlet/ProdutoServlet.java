@@ -22,7 +22,8 @@ import java.io.InputStream;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.http.Part;
 
-@WebServlet("/produtos")
+//anotacao @MultipartConfig para poder adicionar imagens por formulario
+@WebServlet("/usuario/produtos")
 @MultipartConfig
 public class ProdutoServlet extends HttpServlet {
 
@@ -40,7 +41,8 @@ public class ProdutoServlet extends HttpServlet {
             String descricao = request.getParameter("descricao");
             double preco = Double.parseDouble(request.getParameter("preco"));
             int quantidade = Integer.parseInt(request.getParameter("quantidade"));
-            //adding img
+
+            //codigo usado da internet para adicionar uma imagem no BD como mediumblob
             Part filePart = request.getPart("inputFile");
             InputStream inputStream = filePart.getInputStream();
             ByteArrayOutputStream output = new ByteArrayOutputStream();
@@ -49,19 +51,14 @@ public class ProdutoServlet extends HttpServlet {
                 output.write(imagem, 0, length);
             }
             imagem = output.toByteArray();
-            
-            
-            GenericDao<Produto> dao = new GenericDao<Produto>(Produto.class);
 
+            GenericDao<Produto> dao = new GenericDao<>(Produto.class);
             Produto produto = new Produto();
 
             if (dao.buscarProduto(nome) != null) {
-
                 request.setAttribute("mensagem", "Produto já cadastrado!");
                 request.getRequestDispatcher("cadastroProduto.jsp").forward(request, response);
-
             } else {
-
                 produto.setNome(nome);
                 produto.setDescricao(descricao);
                 produto.setPreco(preco);
@@ -70,11 +67,9 @@ public class ProdutoServlet extends HttpServlet {
 
                 dao.adicionar(produto);
 
-                request.setAttribute("mensagem", request.getParameter("inputFile"));
+                request.setAttribute("mensagem", "Produto adicionado com sucesso!");
                 request.getRequestDispatcher("cadastroProduto.jsp").forward(request, response);
-
             }
-
         } catch (Exception e) {
             request.setAttribute("mensagem", "ERRO: " + e.getMessage());
             request.getRequestDispatcher("cadastroProduto.jsp").forward(request, response);

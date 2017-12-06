@@ -4,7 +4,7 @@ Hadil Karim - RA: 20745273
 Guilherme Lins - RA: 20699690
 José Netto - RA: 20163147
 Selma Masuzawa - RA: 20680327
-*/
+ */
 package br.com.siquieri.servlet;
 
 import java.io.IOException;
@@ -22,45 +22,48 @@ import br.com.siquieri.utils.Carrinho;
 
 @WebServlet("/logins")
 public class LoginServlet extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
+
+    private static final long serialVersionUID = 1L;
+
     public LoginServlet() {
         super();
     }
 
-        @Override
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		response.setContentType("text/html");
-		try {
-			String email = request.getParameter("email");
-			String senha1 = request.getParameter("pass1");
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        response.setContentType("text/html");
+        try {
+            String email = request.getParameter("email");
+            String senha1 = request.getParameter("pass1");
 
-			GenericDao<Usuario> dao = new GenericDao<>(Usuario.class);
-			
-			Usuario usuario = dao.buscarUsuario(email, senha1);
-			
-			if(usuario != null) {
-                            
-//                            if((usuario.getEmail() == "gerente@adotafacil.com")) {
-//                                request.setAttribute("mensagem", "Bem-vindo gerente");
-//                            }
-                            
-				HttpSession session = request.getSession(true);
-				session.setAttribute("user", usuario.getEmail());
-                                Carrinho carrinho = new Carrinho();
-                                session.setAttribute("carrinho", carrinho);
-				
-				request.setAttribute("mensagem", "Login realizado com sucesso!");
-				request.getRequestDispatcher("usuario/indexU.jsp").forward(request, response);
-			} else {
-				request.setAttribute("mensagem", "Email e/ou senha inválido(s)!");
-				request.getRequestDispatcher("login.jsp").forward(request, response);
-			}
+            GenericDao<Usuario> dao = new GenericDao<>(Usuario.class);
 
-		} catch (Exception e) {
-			request.setAttribute("mensagem", "ERRO: " + e.getMessage());
-			request.getRequestDispatcher("login.jsp").forward(request, response);
-		}
-	}
+            Usuario usuario = dao.buscarUsuario(email, senha1);
+
+            if ((usuario.getEmail().equalsIgnoreCase("gerente@adotafacil.com"))) {
+                HttpSession session = request.getSession(true);
+                session.setAttribute("user", usuario.getEmail());
+                
+                request.setAttribute("mensagem", "Bem-vindo gerente");
+                request.getRequestDispatcher("usuario/cadastroProduto.jsp").forward(request, response);
+            }
+            if (usuario != null) {
+                HttpSession session = request.getSession(true);
+                session.setAttribute("user", usuario.getEmail());
+                Carrinho carrinho = new Carrinho();
+                session.setAttribute("carrinho", carrinho);
+
+                request.setAttribute("mensagem", "Login realizado com sucesso!");
+                request.getRequestDispatcher("usuario/indexU.jsp").forward(request, response);
+            } else {
+                request.setAttribute("mensagem", "Email e/ou senha inválido(s)!");
+                request.getRequestDispatcher("login.jsp").forward(request, response);
+            }
+
+        } catch (Exception e) {
+            request.setAttribute("mensagem", "ERRO: " + e.getMessage());
+            request.getRequestDispatcher("login.jsp").forward(request, response);
+        }
+    }
 
 }
