@@ -9,6 +9,10 @@
         <servlet-name>CheckoutServlet</servlet-name>
         <servlet-class>br.com.siquieri.servlet.CheckoutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>QuantidadeServlet</servlet-name>
+        <servlet-class>br.com.siquieri.servlet.QuantidadeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>ImagemServlet</servlet-name>
         <url-pattern>/ImagemServlet</url-pattern>
@@ -24,6 +28,10 @@
     <servlet-mapping>
         <servlet-name>CheckoutServlet</servlet-name>
         <url-pattern>/CheckoutServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>QuantidadeServlet</servlet-name>
+        <url-pattern>/QuantidadeServlet</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

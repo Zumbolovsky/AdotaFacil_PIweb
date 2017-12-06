@@ -29,32 +29,40 @@
 
             <h3 style="padding-top: 10px; text-align: center; margin: 20px; font-weight: bold; margin-top: 5%">${mensagem}</h3>
 
-            <div class="list-group">
-                <c:forEach var="produto" items="${produtos}">
-                    <div class="list-group-item row">
-                        <div class="col-sm-4">
-                            <div class="ld-flex w-100 justify-content-between">
-                                <h5 class="mb-1">${produto.nome}</h5> 
+            <form action="quantidades" method="get">
+                <div class="list-group">
+                    <c:forEach var="produto" items="${produtos}">
+                        <div class="list-group-item row">
+                            <div class="col-sm-4">
+                                <div class="ld-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">${produto.nome}</h5> 
+                                </div>
+                                <p class="mb-1">
+                                    ${produto.descricao}
+                                </p>
+                                <small class="text-muted">Preço Unitário: R$${produto.preco}</small>
                             </div>
-                            <p class="mb-1">
-                                ${produto.descricao}
-                            </p>
-                            <small class="text-muted">Preço Unitário: R$${produto.preco}</small>
+                            <hr/>
+                            <div style="margin-left: 10px;">
+                                <label>Quantidade:</label>
+                                <input type="number" name="${produto.nome}" step="1" min="1" value="${produto.quantidade}">
+                            </div>
                         </div>
-                        <hr/>
-                        <div style="margin-left: 10px;">
-                            <label>Quantidade:</label>
-                            <input type="number" step="1" min="1" value="${produto.quantidade}">
-                        </div>
+                    </c:forEach>
+                </div> 
+                <div class="row">
+                    <div class="col-sm-8"></div>
+                    <div class="col-sm-4" style="padding-left: 30px; padding-right: 30px; padding-top: 30px;">
+                        ${botaoquantidade}
                     </div>
-                </c:forEach>
-            </div> 
-            
+                </div>
+            </form>
+
             <div class="row">
                 <h5 id="preco" class="mb-1 col-sm-4" style="padding-left: 30px; padding-top: 30px">${preco}</h5>
                 <div class="col-sm-5"></div>
                 <form action="checkout" method="post" style="padding-left: 30px; padding-right: 30px; padding-top: 30px"> 
-                    <button type="submit" class="btn btn-primary" >Checkout</button>
+                    ${botaocheckout}
                 </form>
             </div>
         </div>

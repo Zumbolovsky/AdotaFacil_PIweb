@@ -30,25 +30,28 @@ public class CheckoutServlet extends HttpServlet {
             
             venda.setUsuario(daoU.buscarUsuario((String) session.getAttribute("user")));
             venda.setProdutos((LinkedHashSet<Produto>) carrinho.getProdutos());
-                                                
-            GenericDao<Venda> daoV = new GenericDao<>(Venda.class);
             
+            GenericDao<Venda> daoV = new GenericDao<>(Venda.class);
+            GenericDao<Produto> daoP = new GenericDao<>(Produto.class);
+            Produto[] produtos = new Produto[carrinho.getProdutos().toArray().length];
+            produtos = carrinho.getProdutos().toArray(produtos);
+         
             daoV.adicionar(venda);
             
-            GenericDao<Produto> daoP = new GenericDao<>(Produto.class);
-            Produto[] produtos = (Produto[]) carrinho.getProdutos().toArray();
-            
             for (int i = 0; i < produtos.length; i++) {
-                produtos[i].getVendas().add(venda);
-                produtos[i].setQuantidade(daoP.buscarProduto(produtos[i].getNome()).getQuantidade() - produtos[i].getQuantidade());
-                daoP.adicionar(produtos[i]);
+                Produto prod = daoP.buscarProduto(produtos[i].getNome());
+                prod.getVendas().add(venda);
+                prod.setQuantidade(prod.getQuantidade() - produtos[i].getQuantidade());
+                daoP.update(prod);
             }
-            
+            Carrinho novoCarrinho = new Carrinho();
+            session.setAttribute("carrinho", novoCarrinho);
+                    
             request.setAttribute("mensagem", "Checkout realizado com sucesso!");
             request.getRequestDispatcher("checkout.jsp").forward(request, response);
         } catch (Exception e) {
-            
-            
+            request.setAttribute("mensagem", "ERRO: " + e.getMessage());
+            request.getRequestDispatcher("carrinho.jsp").forward(request, response);
         }
     }
 

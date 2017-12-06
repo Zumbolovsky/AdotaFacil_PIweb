@@ -23,6 +23,7 @@ public class CarrinhoServlet extends HttpServlet {
             Carrinho carrinho = (Carrinho) session.getAttribute("carrinho");
 
             if (carrinho.getProdutos().isEmpty()) {
+                
                 request.setAttribute("mensagem", "Seu carrinho está vazio!");
                 request.getRequestDispatcher("carrinho.jsp").forward(request, response);
             }
@@ -30,6 +31,8 @@ public class CarrinhoServlet extends HttpServlet {
             double total = carrinho.calcularTotal(carrinho);
             
             request.setAttribute("preco", "Valor Total: R$" + total);
+            request.setAttribute("botaoquantidade", "<button type=\"submit\" class=\"btn btn-primary\">Atualizar quantidade(s)</button>");
+            request.setAttribute("botaocheckout", "<button type=\"submit\" class=\"btn btn-primary\">Checkout</button>");
             request.setAttribute("produtos", carrinho.getProdutos());
             request.getRequestDispatcher("carrinho.jsp").forward(request, response);
         } catch (Exception e) {
@@ -44,6 +47,7 @@ public class CarrinhoServlet extends HttpServlet {
         response.setContentType("text/html");
         HttpSession session = request.getSession();
         try {
+            String msgResposta;
             GenericDao<Produto> daoP = new GenericDao<>(Produto.class);
             Produto produto = daoP.buscarProduto(request.getParameter("produto"));
             Carrinho carrinho = (Carrinho) session.getAttribute("carrinho");
@@ -60,17 +64,34 @@ public class CarrinhoServlet extends HttpServlet {
 
             if (temProdutoNoCarrinho) {
                 Produto p = (Produto) carrinho.getProdutos().toArray()[i];
-                p.setQuantidade(p.getQuantidade() + 1);
+                if (daoP.buscarProduto(p.getNome()).getQuantidade() - p.getQuantidade() > 0) {
+                    p.setQuantidade(p.getQuantidade() + 1);
+                    msgResposta= "Produto adicionado ao carrinho!";
+                } else {
+                    msgResposta = "Produto em quantidade indisponível!";
+                }
             } else {
-                produto.setQuantidade(1);
-                carrinho.getProdutos().add(produto);
+                if(daoP.buscarProduto(produto.getNome()).getQuantidade() > 0) {
+                    produto.setQuantidade(1);
+                    carrinho.getProdutos().add(produto);
+                    msgResposta= "Produto adicionado ao carrinho!";
+                } else {
+                    msgResposta = "Produto em quantidade indisponível!";
+                }
             }
-
+            
+            if (carrinho.getProdutos().isEmpty()) {
+                request.setAttribute("mensagem", "Produto em quantidade indisponivel!<br/><br/>Seu carrinho está vazio!");
+                request.getRequestDispatcher("carrinho.jsp").forward(request, response);
+            }
             double total = carrinho.calcularTotal(carrinho);
-
+            
+            
             request.setAttribute("preco", "Valor Total: R$" + total);
+            request.setAttribute("botaocheckout", "<button type=\"submit\" class=\"btn btn-primary\">Checkout</button>");
+            request.setAttribute("botaoquantidade", "<button type=\"submit\" class=\"btn btn-primary\">Atualizar quantidade(s)</button>");
             request.setAttribute("produtos", carrinho.getProdutos());
-            request.setAttribute("mensagem", "Produto adicionado ao carrinho!");
+            request.setAttribute("mensagem", msgResposta);
             request.getRequestDispatcher("carrinho.jsp").forward(request, response);
         } catch (Exception e) {
             request.setAttribute("mensagem", "ERRO: " + e.getMessage());

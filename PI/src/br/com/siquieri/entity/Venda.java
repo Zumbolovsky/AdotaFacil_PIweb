@@ -38,7 +38,7 @@ public class Venda implements Serializable{
 	@JoinColumn(name="IDUSUARIO")
 	private Usuario usuario;
 	
-	@ManyToMany(mappedBy="vendas")
+	@ManyToMany(fetch=FetchType.LAZY, mappedBy="vendas")
 	private Set<Produto> produtos = new LinkedHashSet<>();
 
 	public int getVendaid() {

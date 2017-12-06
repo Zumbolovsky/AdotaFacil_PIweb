@@ -26,7 +26,7 @@
         <div id="conteudo" style="margin: 50px;">
             <div class="row">
                 <div class="col-sm-2"></div>
-                <label class="col-sm-10">${mensagem}</label>
+                <H4 class="col-sm-10 mb-1">${mensagem}</h4>
             </div>
         </div>
 

@@ -37,6 +37,14 @@ public class GenericDao<T extends Serializable> implements Dao<T> {
         em.getTransaction().commit();
         em.close();
     }
+    
+    public void update(T entidade) {
+        em = JpaUtil.getEntityManager();
+        em.getTransaction().begin();
+        em.merge(entidade);
+        em.getTransaction().commit();
+        em.close();
+    }
 
     public void adicionarDoacao(int idUsuario, Doacao doacao) throws Exception {
         em = JpaUtil.getEntityManager();
