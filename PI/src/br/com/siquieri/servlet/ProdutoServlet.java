@@ -33,10 +33,12 @@ public class ProdutoServlet extends HttpServlet {
         super();
     }
 
+    //metodo para adicionar produtos no banco de dados
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
         try {
+            //recebe os par?metros do formulario
             String nome = request.getParameter("nome");
             String descricao = request.getParameter("descricao");
             double preco = Double.parseDouble(request.getParameter("preco"));
@@ -52,25 +54,32 @@ public class ProdutoServlet extends HttpServlet {
             }
             imagem = output.toByteArray();
 
+            //instancia o objeto da classe GenericDao e novo produto
             GenericDao<Produto> dao = new GenericDao<>(Produto.class);
             Produto produto = new Produto();
 
+            //valida caso ja tenha outro produto com o nome passado pelo formulario no BD
             if (dao.buscarProduto(nome) != null) {
+                //redireciona a pagina especificada alertando que ja existe um produto com tal nome
                 request.setAttribute("mensagem", "Produto já cadastrado!");
                 request.getRequestDispatcher("cadastroProduto.jsp").forward(request, response);
             } else {
+                //definicao dos valores dos atributos da entidade
                 produto.setNome(nome);
                 produto.setDescricao(descricao);
                 produto.setPreco(preco);
                 produto.setQuantidade(quantidade);
                 produto.setImagem(imagem);
 
+                //adiciona o produto no BD
                 dao.adicionar(produto);
 
+                // //redireciona para a pagina especificada relacionando atributos para o uso na pagina de resposta
                 request.setAttribute("mensagem", "Produto adicionado com sucesso!");
                 request.getRequestDispatcher("cadastroProduto.jsp").forward(request, response);
             }
         } catch (Exception e) {
+            //redireciona para a pagina especificada relacionando atributos para o tratamento do erro 
             request.setAttribute("mensagem", "ERRO: " + e.getMessage());
             request.getRequestDispatcher("cadastroProduto.jsp").forward(request, response);
         }

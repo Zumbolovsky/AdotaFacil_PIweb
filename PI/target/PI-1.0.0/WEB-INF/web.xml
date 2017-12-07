@@ -14,10 +14,6 @@
         <servlet-class>br.com.siquieri.servlet.QuantidadeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>ImagemServlet</servlet-name>
-        <url-pattern>/ImagemServlet</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
         <servlet-name>ProdutoServlet</servlet-name>
         <url-pattern>/ProdutoServlet</url-pattern>
     </servlet-mapping>

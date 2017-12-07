@@ -27,24 +27,25 @@ public class UsuarioServlet extends HttpServlet {
         super();
     }
 
-    //para requisicoes do tipo "post" e action "usuarios"
+    //metodo para requisicoes do tipo "post" e action "usuarios"
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html");
         try {
-            
+
             //pega valores dos inputs do formulario 
             String nome = request.getParameter("nome");
             String senha1 = request.getParameter("pass1");
             String email = request.getParameter("email");
             String cpf = request.getParameter("cpf");
 
+            //instancia um objeto generico de acesso ao BD para tratar do usuario e um usuario
             GenericDao<Usuario> dao = new GenericDao<>(Usuario.class);
-
             Usuario usuario = new Usuario();
-            
+
             //busca se já existem usuarios com esse email
             if (dao.buscarUsuario(email) != null) {
+                //redireciona para a pagina de cadastro alertando que o endereco de email ja esta em uso
                 request.setAttribute("mensagem", "Endereço de email em uso!");
                 request.getRequestDispatcher("cadastro.jsp").forward(request, response);
             } else {
@@ -53,7 +54,7 @@ public class UsuarioServlet extends HttpServlet {
                 usuario.setSenha(senha1);
                 usuario.setEmail(email);
                 usuario.setCpf(cpf);
-                
+
                 dao.adicionar(usuario);
 
                 //define mensagens para a resposta do formulario
